@@ -81,7 +81,7 @@ num1 , num2 , num3 = 2 + 2
 //This is not a right way to write a code, readability is the most important .
 
 
-let GameCounter = 100
+let GameCounter = 99
 GameCounter++ //Output = 101 => Post Increment 
 ++GameCounter //Output = 101 => Pre Increment 
 
