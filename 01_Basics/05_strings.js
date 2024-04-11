@@ -19,3 +19,5 @@ console.log(GameName.__proto__);
 // console.log(GameName.toUpperCase());
 console.log(GameName.charAt(5));
 console.log(GameName.indexOf('a'));
+
+console.log(GameName.slice(2,7));
