@@ -35,6 +35,39 @@ let Myobj ={
 const myFunction = function(){
     console.log("Hello World");
 }
-console.log(Animal);
-console.log(Myobj);
-console.log(myFunction());
+// console.log(Animal);
+// console.log(Myobj);
+// console.log(myFunction());
+
+
+
+
+
+//------------------------------------Memory-----------------------------------------
+//Stack (For primitive Datatypes) => in stack memory, we create a copy of variables 
+
+let myinstaName = "a_sahu.me"
+let oldinstaname = myinstaName
+oldinstaname = "its_ars87"
+
+console.log(myinstaName); //Output => a_sahu.me
+console.log(oldinstaname);//Output => its_ars87
+
+
+//Heap (For Non primitive Datatypes) => int stack memory, we get a refernce of the variables
+
+let userOne  ={
+    Email : "ashwani@gmail.com",
+    upi : "xyz@ybl"
+}
+
+let userTwo = userOne
+
+console.log(userOne);
+console.log(userTwo);
+
+
+userTwo.Email = "abc@gmail.com"
+
+console.log(userOne.Email);//Output => abc@gmail.com
+console.log(userTwo.Email);//Output => abc@gmail.com
