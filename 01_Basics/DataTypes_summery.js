@@ -69,5 +69,5 @@ console.log(userTwo);
 
 userTwo.Email = "abc@gmail.com"
 
-console.log(userOne.Email);//Output => abc@gmail.com
 console.log(userTwo.Email);//Output => abc@gmail.com
+console.log(userOne.Email);//Output => abc@gmail.com
