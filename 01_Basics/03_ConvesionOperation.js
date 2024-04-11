@@ -44,8 +44,8 @@ let AgeInString =String(age);
 let isLoggedIn = "Ashwani"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(typeof(booleanIsLoggedIn))
-console.log(booleanIsLoggedIn);
+// console.log(typeof(booleanIsLoggedIn))
+// console.log(booleanIsLoggedIn);
 
 
 /*
@@ -55,3 +55,35 @@ Outputs
 "" -> false
 "Ashwani" -> true
 */
+
+//===================Operations================================
+let value = 3
+let negvalue = -value ;
+// console.log(negvalue); // Output = -3
+
+let str1 = "Hello"
+let str2 = " Ashwani"
+let str3 = str1 + str2
+// console.log(str3); //Output = Hello Ashwani
+
+// console.log("1" + 2); // Output = 12
+// console.log(1 + "2"); // Output = 12
+// console.log("1" + 2 + 2); // Output = 122
+// console.log(1 + 2 + "2"); // Output = 32
+
+console.log(+ true); //Output = 1
+console.log(+ ""); //Output = 0
+console.log(+ false); //Output = 0
+
+
+let num1 , num2 , num3 
+num1 , num2 , num3 = 2 + 2
+//This is not a right way to write a code, readability is the most important .
+
+
+let GameCounter = 100
+GameCounter++ //Output = 101 => Post Increment 
+++GameCounter //Output = 101 => Pre Increment 
+
+console.log(GameCounter);
+
