@@ -25,7 +25,51 @@ function AddTwoNum(num1,num2){
     return result
 }
 const res = AddTwoNum(2,3)
-console.log("Result:",res)
+// console.log("Result:",res)
+
+
+
+function logInUserMsg(Username){
+    return `${Username} just logged in`
+}
+
+// console.log(logInUserMsg("Ashwani"))
+// console.log(logInUserMsg()) //undefined
+
+
+function logInUserMsg(Username){
+    if(Username === undefined)
+        {
+        console.log("Please enter a username");
+        return
+    }
+    return `${Username} just logged in`
+}
+// console.log(logInUserMsg()) 
+
+
+function logInUserMsg(Username){
+    if(!Username)
+        {
+        console.log("Please enter a username");
+        return
+    }
+    return `${Username} just logged in`
+}
+// console.log(logInUserMsg()) 
+
+
+function logInUserMsg(Username = "John"){ //default value is John
+    if(!Username)
+        {
+        console.log("Please enter a username");
+        return
+    }
+    return `${Username} just logged in`
+}
+console.log(logInUserMsg("Ashwani"))  // overwrite the john
+
+
 
 
 
