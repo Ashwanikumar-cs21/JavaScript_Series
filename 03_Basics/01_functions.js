@@ -67,7 +67,55 @@ function logInUserMsg(Username = "John"){ //default value is John
     }
     return `${Username} just logged in`
 }
-console.log(logInUserMsg("Ashwani"))  // overwrite the john
+// console.log(logInUserMsg("Ashwani"))  // overwrite the john
+
+
+
+function CalculateCartPrice(...num1){ //(...) it is rest operator, which return array of arguments
+    return num1;
+}
+// console.log(CalculateCartPrice(100,200,300,400,500,600));
+
+
+function CalculateCartPrice(val1,val2,...num1){ //(...) it is rest operator, which return array of arguments
+    return num1;
+}
+// console.log(CalculateCartPrice(100,200,300,400,500,600));
+
+
+
+const User = {
+    UserName : "Ashwani",
+    Price : 199
+}
+
+function HandleObject(AnyObject){
+    console.log(`User is ${AnyObject.UserName} and price is ${AnyObject.Price}`);
+}
+
+// HandleObject(User)
+HandleObject({
+    UserName : "Vikas",
+    Price : 150
+})
+
+
+const myNewArr = [100,200,300,400,500,600]
+
+function secondvalue(getArr){
+    return getArr[1]
+}
+
+// console.log(secondvalue(myNewArr));
+console.log(secondvalue([200,300,400,500,600]));
+
+
+
+
+
+
+
+
 
 
 
