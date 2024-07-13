@@ -17,13 +17,15 @@
     </div>
 
     <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li class="list1">One</li>
+        <li class="list1">Two</li>
+        <li class="list1">Three</li>
+        <li class="list1">Four</li>
     </ul>
 
     <script>
        
+       // Select element by Class Name
        const heading = document.getElementsByClassName("heading");
         heading[0].innerHTML = "<h1>Hello</h1>";
 
@@ -31,7 +33,7 @@
         heading[0].style.padding = "5px"
         heading[0].style.borderRadius = "20px"
         
-
+        // Select element by Id
         const para = document.getElementById("para");
         para.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, modi.</p>";
 
@@ -40,12 +42,51 @@
         para.style.borderRadius = "20px"
         para.style.fontSize = "25px"
 
+
+        //select first element (.className), (#Id), (element), (input[tpe = "password"])  
+       /* 
         const myul = document.querySelector('ul')
         const changecolor = myul.querySelector('li')
         changecolor.style.background = "green"
         changecolor.style.padding = "15px"
         changecolor.style.borderRadius = "15px"
         changecolor.innerText = "Four"
+        */
+
+
+        //select all element  (.className), (#Id), (element), (input[tpe = "password"])
+        /*
+        const templist  = document.querySelectorAll('li')
+        templist[2].style.color = "yellow"
+
+
+        //..................................traverse listNode........................................
+        templist.forEach(function(l) {
+            l.style.color = "red"
+        })
+*/
+
+        // change HTML collection into array
+        const convertedArr = document.getElementsByClassName('list1')
+        const arr = Array.from(convertedArr)
+        arr.forEach(function(item) {
+            item.style.backgroundColor = "orange"
+            item.style.borderRadius = "5px"
+            item.style.margin = "10px"
+            item.style.padding = "5px"
+            item.style.fontSize = "25px"
+        })
+
+
+
+
+
+
+
+
+
+
+
 
 
         
