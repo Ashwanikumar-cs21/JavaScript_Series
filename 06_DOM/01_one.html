@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM Learning on chai aur code </h1>
-        <p id="para">000000</p>
+<body class="bg-black">
+    <div >
+        <h1 class="heading">DOM Learning</h1>
+        <p id="para">Lorem ipsum dolor sit amet.</p>
     </div>
 
-    <script>
-        var heading = document.getElementsByClassName("heading")
-        heading[0].innerHTML = "<h1>Hello Bhai</h1>"
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
 
-        document.getElementById('para').innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, modi.</p>"
+    <script>
+       
+       const heading = document.getElementsByClassName("heading");
+        heading[0].innerHTML = "<h1>Hello</h1>";
+
+        heading[0].style.backgroundColor = "red";
+        heading[0].style.padding = "5px"
+        heading[0].style.borderRadius = "20px"
+        
+
+        const para = document.getElementById("para");
+        para.innerHTML = "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, modi.</p>";
+
+        para.style.backgroundColor = "blue";
+        para.style.padding = "5px"
+        para.style.borderRadius = "20px"
+        para.style.fontSize = "25px"
+
+        const myul = document.querySelector('ul')
+        const changecolor = myul.querySelector('li')
+        changecolor.style.background = "green"
+        changecolor.style.padding = "15px"
+        changecolor.style.borderRadius = "15px"
+        changecolor.innerText = "Four"
+
+
+        
+        
     </script>
 </body>
 </html>
